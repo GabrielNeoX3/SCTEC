@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML</title>
+</head>
+
+<body>
+    <h1>Bem-vindo ao Desafio HTML</h1>
+    <h2>Me chamo Gabriel</h2>
+    <p>Este é um desafio para praticar suas habilidades em HTML. Lorem ipsum dolor, sit amet consectetur adipisicing
+        elit. Eligendi, a dolor? Reiciendis eum tenetur culpa officiis, perferendis porro quas nisi totam omnis libero
+        nobis adipisci blanditiis maxime! Quaerat, sunt culpa!</p>
+
+    <h2>Minhas metas para esse ano</h2>
+    <ul>
+        <li>Aprender mais sobre acessibilidade na web</li>
+        <li>Praticar CSS para melhorar o design das minhas páginas</li>
+        <li>Explorar novas tecnologias, como frameworks JavaScript</li>
+    </ul>
+
+    <h2>Minhas habilidades</h2>
+    <p>Atualmente, eu tenho as seguintes habilidades:</p>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <figure>
+        <img src="minha-imagem.jpg" alt="Uma descrição da minha imagem">
+        <figcaption>Esta é uma imagem que representa minhas habilidades.</figcaption>
+    </figure>
+
+
+    <table border="2" cellpadding="10" bordercolor="purple">
+        <thead>
+            <tr>
+                <th>Habilidade</th>
+                <th>Nível</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Avançado</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediário</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Básico</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+
+    <br>
+    <video controls width="400" controlsList="nodownload" autoplay muted poster="minha-imagem.jpg">
+        <source src="meu-video.mkv" type="video/mkv">
+        <track kind="subtitles" src="meu-video.srt" srclang="pt" label="Português">
+        <p>Seu navegador não suporta a tag de vídeo.</p>
+
+    </video>
+
+    <iframe src="https://aulas.devclub.com.br/" width="140" height="180"></iframe>
+    <br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11744.86264464175!2d-49.3842895340071!3d-28.67089634392871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1755015969264!5m2!1spt-BR!2sbr"
+        width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br>
+    <br>
+    <label for="Rua">
+        <Input autocomplete="street-address" placeholder="Digite Sua Rua" autofocus></Input>
+    </label>
+
+    <label for="cor">
+        <input type="color" name="cor" id="cor" value="#ff0000">
+    </label>
+
+    <label for="range">
+        <input type="range" name="range" id="range" min="0" max="100" value="50">
+    </label>
+
+    <label for="password">
+        <input type="password" name="password" id="password" placeholder="Digite Sua Senha">
+    </label>
+
+    <label for="email">
+        <input type="email" name="email" id="email" placeholder="Digite Seu Email">
+    </label>
+
+    <label for="checkbox">
+        <input type="checkbox" name="checkbox" id="checkbox">
+        Aceito os termos e condições
+    </label>
+
+    <label for="file">
+        <input type="file" name="file" id="file" multiple accept=".jpg,.jpeg,.png,.gif">
+    </label>
+
+    <label for="number">
+        <input type="number" name="number" id="number" placeholder="Digite um Número">
+    </label>
+
+    <label for="date">
+        <input type="date" name="date" id="date">
+    </label>
+
+    <h2>Qual opção você escolhe</h2>
+    <label for="Facebook">
+        <input type="radio" name="radio" id="Facebook">
+        Facebook
+    </label>
+    <label for="Instagram">
+        <input type="radio" name="radio" id="Instagram">
+        Instagram
+    </label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <form action="#" method="post" id="formulario" target="_blank" enctype="multipart/form-data">
+        <!-- o enctype serve pra avisar que nao vai enviar só formularios mas imagens ou outras coisas também, outros tipos de arquivos no caso -->
+        <h2>Digite seu Nome e Endereço</h2>
+        <label for="text"> Nome
+            <input type="text" name="text" id="text" placeholder="Digite Seu Nome">
+        </label>
+        <label for="endereco"> Endereço
+            <input type="text" name="endereco" id="endereco" placeholder="Digite Seu Endereço">
+        </label>
+        <label for="email"> Email
+            <input type="email" name="email" id="email" placeholder="Digite Seu Email">
+        </label>
+        <button type="reset">Resetar dados</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>tipos de botoes</h2>
+    <button type="button" onclick="alert('Botão Comum clicado')">Botão Comum</button>
+    <button type="submit">Botão de Envio</button>
+    <button type="reset" disabled>Botão de Reset</button>
+
+    <br>
+    <br>
+</body>
+
+</html>
